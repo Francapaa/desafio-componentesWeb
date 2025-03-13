@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #13171C;
+}
+@media (min-width: 770px){
+    .header-mobile{
+        display: none;
+    }
+    .logo-header{
+        width: 100px;
+        height: 100px; 
+        margin-top: 20px; 
+    }
+    .portfolio-header,
+    .servicios-header,
+    .contacto-header{
+        position: relative;
+        left: 75%;
+        margin-left: 15px; 
+        color: white; 
+    }
+    .mis-trabajos__titulo{
+        color: white;
+        font-size: 50px;
+        margin-top: 100px;
+        text-align: center; 
+    }
+    .mis-trabajos__titulo::after{
+        color: #00ADB5; 
+        content: " trabajos"
+    }
+    .mis-trabajos__imagen{
+        position: relative;
+        left: 30%
+    }
+    .proyectos__cartaClon.de.Instagram img,
+    .proyectos__cartaCreacion.de.Bitcoin img,
+    .proyectos__cartaJuego.de.Piedra.Papel.o.Tijera img{
+        height: 150px;
+        width: 250px; 
+        margin: 15px; 
+    }
+    .proyectos__cartaClon.de.Instagram,
+    .proyectos__cartaCreacion.de.Bitcoin,
+    .proyectos__cartaJuego.de.Piedra.Papel.o.Tijera{
+        width: 200px;
+        height: 300px; 
+        margin-top: 70px;
+        margin: 80px; 
+        text-align: center;
+        background-color:#393e4644;
+        width: 450px;
+        height: 350px;  
+        color: white
+    }
+    .proyectos__contenedor-padre-de-cartas{
+        display: flex;
+        flex-direction: row;
+        height: 600px; 
+        background-image: url('/components/image.png');
+    }
+
+   .footer__desktop{
+    height: 400px; 
+   }
+   .social-network__GitHub,
+   .social-network__Instagram,
+   .social-network__Linkedin{
+       width: 50px;
+       height: 50px;
+   }
+   .social-network__GitHub{
+    position: absolute;
+    top: 2650px; 
+}
+.social-network__Instagram{ 
+    position: absolute;
+    left: 54%;
+    top: 1900px; 
+}
+.social-network__GitHub{
+    position: absolute;
+    top: 1900px;
+    left:40%; 
+}
+.social-network__Linkedin{
+    position: absolute;
+    top: 1900px;
+    left: 47%; 
+}
+.footer__logo-desktop{
+    width: 90px;
+    height: 90px; 
+    position: absolute;
+    top:1730px;
+    left:46%;   
+}
+.enlaces-paginas__Contacto,
+.enlaces-paginas__Portfolio,
+.enlaces-paginas__Servicios{
+    position: relative;
+    top: 100px; 
+    left: 45%;
+    font-size: 18px; 
+}
+.footer__derechos-de-autor-desktop{
+    position: relative;
+    left: 40%; 
+    top: 270px; 
+}
+}
+@media (max-width: 769px){
+    .header-desktop{
+        display: none; 
+    }
+    .header-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: #13171C;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        z-index: 1001;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-mobile-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .menu-mobile-list li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .menu-hamburguesa {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        right: 30%
+    }
+    
+    .cerrar-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    .logo-header-mobile {
+        width: 100px;
+        height: 100px;
+    }
+    .mis-trabajos__contenedor-padre{
+         margin-top: 120px;
+        background-color: #192130; 
+        width: 100%;
+        height: 500px; 
+        overflow: hidden;
+        padding: 0;
+        box-sizing: border-box  ;
+    }
+    .mis-trabajos__titulo{
+        font-size: 50px;
+        position: relative;
+        left: 32%; 
+        color: white
+    }
+    .mis-trabajos__titulo::after{
+        content: " trabajos";
+        color: #00ADB5;
+    }
+    .mis-trabajos__imagen{
+        width: 400px;
+        height: 400px; 
+        position: relative;
+        left: 22%; 
+    }
+    .proyectos__cartaClon.de.Instagram img,
+    .proyectos__cartaCreacion.de.Bitcoin img,
+    .proyectos__cartaJuego.de.Piedra.Papel.o.Tijera img{
+        margin-top: 10px;
+        width: 350px;
+        height: 200px; 
+    }
+    .proyectos__cartaClon.de.Instagram,
+    .proyectos__cartaCreacion.de.Bitcoin,
+    .proyectos__cartaJuego.de.Piedra.Papel.o.Tijera{
+        margin-top: 20px; 
+        background-color: #393e4644;
+        width:400px;
+        height: 340px; 
+        position: relative;
+        left: 22%; 
+        text-align: center;
+        color: white
+    }
+    .proyectos__contenedor-padre-de-cartas{
+        background-color: #192130;
+        overflow: hidden;
+        background-image:  url('/components/image.png'); /*la url arranco con / y tiene que estar sin espacio de url() */;
+    }
+    .social-network__GitHub,
+    .social-network__Instagram,
+    .social-network__Linkedin{
+        width: 50px;
+        height: 50px;
+    }
+    .social-network__GitHub{
+        position: absolute;
+        top: 2650px; 
+    }
+    .social-network__Instagram{ 
+        position: absolute;
+        left: 54%;
+        top: 1900px; 
+    }
+    .social-network__GitHub{
+        position: absolute;
+        top: 1900px;
+        left:40%; 
+    }
+    .social-network__Linkedin{
+        position: absolute;
+        top: 1900px;
+        left: 47%; 
+    }
+    .footer__logo-desktop{
+        width: 90px;
+        height: 90px; 
+        position: absolute;
+        top:1730px;
+        left:44%;   
+    }
+    .enlaces-paginas__Contacto,
+    .enlaces-paginas__Portfolio,
+    .enlaces-paginas__Servicios{
+        position: relative;
+        top: 100px; 
+        left: 43%;
+        font-size: 18px; 
+    }
+    .footer__derechos-de-autor-desktop{
+        position: relative;
+        top: 130px;
+        left: 38%; 
+    }
+    .footer__desktop{
+        background-color: #13171C;
+    }
+}

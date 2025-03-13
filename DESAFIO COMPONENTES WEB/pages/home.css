@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (min-width: 769px){
+.header-mobile{
+    display: none;
+}
+.header-desktop{
+    height: 150px;
+}
+.logo-header{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-top:25px;
+    margin-left: 15px; 
+}
+.portfolio-header,
+.servicios-header,
+.contacto-header{
+    color: white; 
+    position: relative;
+    left: 800px;
+    bottom: 30px;
+    margin: 15px;  
+}
+.bienvenida__contenedor-de-todo{
+    height: 690px; 
+}
+.bienvenida__me-presento {
+        color: #ffffff; /* Color para "Hola Soy" */
+        font-size: 75px; 
+        position: relative;
+        left: 450px;
+}
+
+.bienvenida__me-presento::after {
+        content: "Francisco";
+        color: #00ADB5; /* Color para "Francisco" */
+        display: block; /* Asegura que esté en la misma línea */
+         /* Espacio entre "Hola Soy" y "Francisco" */
+        }
+
+.bienvenida__imagen{
+    width: 400px;
+    height: 400px; 
+    position: relative;
+    left: 380px; 
+    top: 55px; 
+}
+.presentacion__contenedor{
+    height: 600px;
+    background-color :#192130; 
+}
+.presentacion__quien-soy{
+height: 150px;
+font-size: 30px;
+text-align: center;
+margin-top: 30px;
+position: relative;
+right: 30px; 
+font-weight: 800;
+}
+.presentacion__descripcion-mia{
+    height:80px;
+    font-size: 15px; 
+    text-align: left;
+    width:120px; 
+    position: relative;
+    left: 250px;
+    font-weight: 500;
+}
+.presentacion__imagen-mia{
+    width:200px;
+    height: 400px; 
+    position: relative; 
+    left: 720px; 
+    bottom: 130px; 
+}
+.servicios__contenedor{
+    width: 100%;
+    height: 550px; 
+    background-image: url('/components/image.png'); /*la url arranco con / y tiene que estar sin espacio de url() */
+    background-color: #13171C;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+.servicios__titulo{
+    color: rgb(238, 238, 236); 
+    position: relative;
+    font-size: 70px;
+    left: 440px; 
+}
+.servicios__titulo::after{
+    content: "Servicios";
+    color: #00ADB5;
+    position: absolute;
+    left:120px; 
+}
+.cards__contenedor-padre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-desarrollo-de-paginas-web img,
+.card-seo img,
+.card-desarrollo-de-aplicaciones-moviles img{
+    margin-top : 5px; 
+    width: 150px;
+    height: 150px; 
+}
+.card-desarrollo-de-paginas-web,
+.card-seo,
+.card-desarrollo-de-aplicaciones-moviles{
+    margin-top: 50px;
+    width: 200px;
+    height:auto; 
+    text-align: center;
+    background-color:  #393e467a;
+    margin:15px; 
+}
+.contacto__contenedor{
+    width: 100%;
+    height: 600px; 
+    display: flex;
+    justify-content: flex-end;
+}
+.contacto__form{
+    width: 45%;
+    margin-top: 100px; 
+    margin-right: 45px; 
+}
+.contacto__titulo{
+    display: inline-block;
+    height: 100px; 
+    position: relative;
+    right: 300px;
+    margin-top: 200px; 
+    font-size: 40px;
+    font-weight: 600;
+}
+.enviar__boton-de-enviar{
+    position: relative;
+    background-color:#00ADB5;
+    color:black; 
+    font-weight: 750;
+    bottom: 150px;
+    left: 70%;
+    height:30px;
+    width: 110px; 
+    border-radius: 15px;
+}
+.footer-desktop{
+    height: 300px; 
+}
+.social-network__GitHub,
+.social-network__Instagram,
+.social-network__Linkedin{
+    width: 50px;
+    height: 50px;
+}
+.social-network__GitHub{
+    position: absolute;
+    top: 2650px; 
+}
+.social-network__Instagram{ 
+    position: absolute;
+    left: 55%;
+    top: 2650px; 
+}
+.social-network__GitHub{
+    position: absolute;
+    top: 2650px;
+    left:40%; 
+}
+.social-network__Linkedin{
+    position: absolute;
+    top: 2650px;
+    left: 47%; 
+}
+.footer__logo-desktop{
+    width: 90px;
+    height: 90px; 
+    position: absolute;
+    top:2550px;
+    left:45%;   
+}
+.enlaces-paginas__Contacto,
+.enlaces-paginas__Portfolio,
+.enlaces-paginas__Servicios{
+    position: relative;
+    top: 80px; 
+    left: 46%;
+}
+.footer__derechos-de-autor-desktop{
+    position: relative;
+    top: 130px;
+    left: 38%; 
+}
+}
+@media (max-width: 768px) {
+    body{
+        padding-top: 80px; 
+    }
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: #13171C;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        z-index: 1001;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-mobile-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .menu-mobile-list li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .menu-hamburguesa {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+    
+    .cerrar-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    .logo-header-mobile {
+        width: 60px;
+        height: 60px;
+    }
+    .bienvenida__contenedor-de-todo{
+        height:600px;
+        width: 100%;
+        background-color: #13171C;
+        overflow: hidden;
+    }
+    .bienvenida__me-presento {
+        color: #ffffff; /* Color para "Hola Soy" */
+        font-size: 75px; 
+        position: relative;
+        left: 200px;
+      }
+      
+      .bienvenida__me-presento::after {
+        content: "Francisco";
+        color: #00ADB5; /* Color para "Francisco" */
+        display: block; /* Asegura que esté en la misma línea */
+         /* Espacio entre "Hola Soy" y "Francisco" */
+      }
+    .bienvenida__imagen{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 230px;
+    }
+    .presentacion__contenedor{
+        overflow: hidden; 
+        background-color: #192130;
+        width: 100%;
+        height: 700px; 
+    }
+    .presentacion__quien-soy{
+        color: white;
+        font-size: 60px;
+        position: relative;
+        left: 150px; 
+    }
+    .presentacion__descripcion-mia{
+        color: white;
+        font-size: 20px;
+        width: 60%; 
+        position: relative;
+        left: 150px; 
+    }
+    .presentacion__imagen-mia{
+        height:300px;
+        width:150px; 
+        position: relative;
+        left: 210px; 
+        margin: 20px; 
+        top: 100px; 
+    }
+    .servicios__contenedor{
+        background-image: url('/components/image.png'); /*la url arranco con / y tiene que estar sin espacio de url() */
+        background-color: #13171C;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden; 
+    }
+    .servicios__titulo{
+        color: rgb(238, 238, 236); 
+        position: relative;
+        font-size: 70px;
+        left: 140px; 
+    }
+    .servicios__titulo::after{
+        content: "Servicios";
+        color: #00ADB5;
+        position: absolute;
+        left:120px; 
+    }
+    #contenedor-de-todas-las-cards{
+        width: 100%;
+        height:1250px; 
+    }
+    .card-desarrollo-de-paginas-web img,
+    .card-seo img,
+    .card-desarrollo-de-aplicaciones-moviles img{
+        margin-top: 15px;
+        width:300px;
+        position: relative;
+        left: 150px; 
+    }
+    .card-desarrollo-de-aplicaciones-moviles,
+    .card-desarrollo-de-paginas-web,
+    .card-seo{
+        height:350px;
+        width: 90%; 
+        margin-left: 40px;
+        background-color: #393e467a ;
+        margin-top: 30px; 
+    }    
+    .card-desarrollo-de-aplicaciones-moviles h2 ,
+    .card-desarrollo-de-paginas-web h2 {
+       color: white;
+       position: relative;
+       left: 165px; 
+    }
+    .card-seo h2{
+        color: white;
+        position: relative;
+        left: 280px; 
+    }
+    .card-desarrollo-de-aplicaciones-moviles p ,
+    .card-desarrollo-de-paginas-web p ,
+    .card-seo p{
+        color: white;   
+        position: relative;
+        left: 160px;
+        width: 50%;
+        text-align: center;
+    }
+    .contacto__contenedor{
+        width: 100%;
+        height: 550px; 
+        background-color: #13171C;
+    }
+    .contacto__titulo{
+        width: 200px;
+        font-size: 25px;
+        position: relative;
+        left: 280px; 
+        margin-top: 40px; 
+        color: white;
+        font-weight: 800;
+        overflow: hidden;
+    }
+    .enviar__boton-de-enviar{
+        width:120px;
+        height: 50px;
+        background-color: #00ADB5;
+        color: black;
+        border-radius: 10px; 
+        position: relative;
+        left: 270px;
+        bottom: 150px;
+        font-weight: 800;
+        cursor: pointer
+    }
+    .footer-desktop{
+        width: 100%;
+        height: 300px; 
+    }
+    .social-network__GitHub,
+    .social-network__Linkedin,
+    .social-network__Instagram{
+        width: 50px; 
+        height: 50px;
+    }
+    .enlaces-paginas__Portfolio,
+    .enlaces-paginas__Servicios,
+    .enlaces-paginas__Contacto{
+        position: relative;
+        display: inline-block;
+        left: 290px; 
+        margin-top: 20px; 
+    }
+    .footer__logo-desktop{
+        width: 80px;
+        height: 80px; 
+        display: inline-block;
+        position: absolute;
+        top: 3400px;
+        left: 280px;  
+    }
+    .footer__derechos-de-autor-desktop{
+        position: relative;
+        top: 30px;
+        left: 200px;
+    }
+    .social-network__Linkedin,
+    .social-network__Instagram{
+        position: relative;
+        top: 195px;
+        left:300px; 
+    }
+    .social-network__GitHub{
+        position: relative;
+        top: 8px; 
+        left: 250px;
+    }
+}

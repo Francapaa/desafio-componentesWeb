@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home ||  Francisco Caparruva</title>
+    <script defer type ="module"src = "pages/home.js"></script>
+    <script defer type ="module" src = "pages/servicios.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="pages/home.css">
+</head>
+<body>
+    <div class="bienvenida__contenedor-de-todo">
+        <h1 class = "bienvenida__me-presento">Hola Soy</h1>
+        <img src="./rocket.png" alt="rocket" class = "bienvenida__imagen">
+    </div>
+    <div class="presentacion__contenedor">
+        <h2 class = "presentacion__quien-soy">Soy Francisco</h2>
+        <p class = "presentacion__descripcion-mia">
+            Mi nombre es Francisco, soy desarrollador de software y tengo 19 años. 
+            Estudio en la UTN y me gusta mucho programar. Me gusta la tecnologia y el constante cambio.
+            Sé ingles y español. 
+        </p>
+        <img src="./francisco.jpg" alt="foto-mia" class = "presentacion__imagen-mia">
+    </div>
+    <div class="servicios__contenedor" id = "servicios">
+        <h2 class = "servicios__titulo">Mis</h2>
+        <div id = "contenedor-de-todas-las-cards"></div>
+    </div>
+    <div class="contacto__contenedor">
+        <h2 class = "contacto__titulo" id = "contacto">Escribime</h2>
+        <form class="contacto__form" id = "contact-form">
+            <div class="field-name">
+                <label class="label">Nombre</label>
+                <div class="control-name">
+                  <input class="input" type="text" placeholder="Type your name here!">
+                </div>
+              </div>
+        
+              <div class="field-email">
+                <label class="label">Email</label>
+                <div class="control-email">
+                  <input class="input" type="text" placeholder="Type your email here!" id = "email">
+                </div>
+              </div>
+        
+              <div class="field-message">
+                <label class="label">Mensaje</label>
+                <div class="control-message">
+                  <textarea class="textarea" placeholder="Type your message here!" id = "message"></textarea>
+                </div>
+              </div>
+        </form>
+        
+    </div>
+</body>
+</html>
